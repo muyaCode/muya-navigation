@@ -3,8 +3,11 @@
 </script>
 
 <template>
-  <div class="">
-    ID
+  <div>
+    ID：{{ $route.params.id }}
+  </div>
+  <div>
+    posts-{{ $route.params.id }}
   </div>
 </template>
 
