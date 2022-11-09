@@ -21,9 +21,12 @@
       */
       { name:'keyword', content: '前端|后端|学习|导航|前端导航|后端导航|前端库导航|前端学习导航' },
     ],
-    script: [
-      { children: 'console.log(\'Hello word\')' }
-    ]
+  })
+
+  // 引用中间件
+  definePageMeta({
+    middleware: ["auth"]
+    // or middleware: 'auth'
   })
 </script>
 
