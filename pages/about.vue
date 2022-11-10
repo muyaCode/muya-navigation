@@ -13,7 +13,10 @@
     meta: [
       { name:'description', content: '关于页面' }
     ],
-  })
+  });
+  // 请求本地服务器接口
+  const hello = await $fetch('/api/hello')
+  const nuxt = await $fetch('/api/user/nuxt')
 </script>
 
 <template>
@@ -21,6 +24,8 @@
     <div>关于页面</div>
     <button @click="enableCustomLayout">动态更改布局</button>
     <NuxtLink to="/">回到首页</NuxtLink>
+    <div>{{ hello.data }}</div>
+    <div>{{ nuxt }}</div>
   </div>
 </template>
 
