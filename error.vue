@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div>404</div>
+    <div>发生了错误！！！</div>
     <button @click="handleError">返回首页</button>  
   </div>
 </template>
