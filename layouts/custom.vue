@@ -1,15 +1,7 @@
-<script setup lang='ts'>
-  
-</script>
-
 <template>
   <div>
-    custom - layout布局
+    <p>Custom Layout</p>
+    <hr/>
     <slot />
   </div>
 </template>
-
-<style scoped lang="scss">
-  
-</style>
-
